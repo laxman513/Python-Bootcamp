@@ -1,0 +1,25 @@
+employee = {"id": 101, "name": "Laxman", "department": "IT"}
+print("updte salary to the employee")
+employee.update({"salary": 5000})
+print("update the department")
+employee.update({"department": "AI"})
+print("Complete Dictonary")
+print("-----------------")
+print(employee)
+print("All Keys")
+print("-----------------")
+print(employee.keys())
+print("All Values")
+print("-"*20)
+print(employee.values())
+print("All key-value pairs (using items())")
+print(20*"#")
+print(employee.items())
+print("Total number of fields using len()")
+print("-----------------")
+print(len(employee.items()))
+
+print("Using for loop to print")
+for key, value in employee.items():
+    print(f"{key} : {value}")
+

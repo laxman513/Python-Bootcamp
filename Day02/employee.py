@@ -1,0 +1,40 @@
+name = input("Please enter your Name: ")
+company = input("Please enter your Company Name: ")
+age = int(input("Enter your Age: "))
+experience = float(input("Enter your total years of Experience: "))
+salary = float(input("Enter your Salary: "))
+
+print("--------------------------------------------------")
+print("                  Employee Details                ")
+print("--------------------------------------------------")
+print("Name                 :", name)
+print("Company              :", company)
+print("Age                  :", age)
+print("Experience           :", experience)
+print("Salary               :", salary)
+print("--------------------------------------------------")
+
+print("printing details again using f-Strings")
+
+
+print("--------------------------------------------------")
+print("                  Employee Details                ")
+print("--------------------------------------------------")
+print(f"Name                 :{name}")
+print(f"Company              :{company}")
+print(f"Age                  :{age}")
+print(f"Experience           :{experience}")
+print(f"Salary               :{salary}")
+print("--------------------------------------------------")
+
+
+
+print("="*50)
+print("                  Employee Details                ")
+print(50*"=")
+print(f"Name                 :{name}")
+print(f"Company              :{company}")
+print(f"Age                  :{age}")
+print(f"Experience           :{experience}")
+print(f"Salary               :{salary}")
+print(100*"--------------------------------------------------")
