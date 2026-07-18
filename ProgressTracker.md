@@ -17,3 +17,21 @@
 ✅ Day 08 - Sets
 
 ⬜ Day 09 - Functions
+## ✅ Day 09 - Completed
+
+Topics Covered:
+- Functions
+- return
+- pass
+- Parameters
+- Arguments
+- Default Arguments
+- Keyword Arguments
+- Positional Arguments
+- *args
+- **kwargs
+- Variable Scope
+- Built-in Functions
+
+Status: ✅ Completed
+Git Commit: Pending
