@@ -181,3 +181,260 @@ with open("hello.txt", "r") as file:
     for line in file:
 
         print(line.strip())
+
+# ==========================================================
+# Assignment 11
+# Count Number of Vowels
+# ==========================================================
+
+print("\nAssignment 11")
+print("-" * 40)
+
+# ---------- Solution ----------
+
+with open("hello.txt", "r") as file:
+
+    data = file.read().lower()
+
+count = 0
+
+for ch in data:
+
+    if ch in "aeiou":
+
+        count += 1
+
+print("Vowels :", count)
+
+
+# ==========================================================
+# Assignment 12
+# Count Number of Digits
+# ==========================================================
+
+print("\nAssignment 12")
+print("-" * 40)
+
+# ---------- Solution ----------
+
+with open("hello.txt", "r") as file:
+
+    data = file.read()
+
+count = 0
+
+for ch in data:
+
+    if ch.isdigit():
+
+        count += 1
+
+print("Digits :", count)
+
+
+# ==========================================================
+# Assignment 13
+# Count Uppercase Letters
+# ==========================================================
+
+print("\nAssignment 13")
+print("-" * 40)
+
+# ---------- Solution ----------
+
+with open("hello.txt", "r") as file:
+
+    data = file.read()
+
+count = 0
+
+for ch in data:
+
+    if ch.isupper():
+
+        count += 1
+
+print("Uppercase Letters :", count)
+
+
+# ==========================================================
+# Assignment 14
+# Count Lowercase Letters
+# ==========================================================
+
+print("\nAssignment 14")
+print("-" * 40)
+
+# ---------- Solution ----------
+
+with open("hello.txt", "r") as file:
+
+    data = file.read()
+
+count = 0
+
+for ch in data:
+
+    if ch.islower():
+
+        count += 1
+
+print("Lowercase Letters :", count)
+
+
+# ==========================================================
+# Assignment 15
+# Find Longest Word
+# ==========================================================
+
+print("\nAssignment 15")
+print("-" * 40)
+
+# ---------- Solution ----------
+
+with open("hello.txt", "r") as file:
+
+    words = file.read().split()
+
+print("Longest Word :", max(words, key=len))
+
+
+# ==========================================================
+# Assignment 16
+# Find Shortest Word
+# ==========================================================
+
+print("\nAssignment 16")
+print("-" * 40)
+
+# ---------- Solution ----------
+
+with open("hello.txt", "r") as file:
+
+    words = file.read().split()
+
+print("Shortest Word :", min(words, key=len))
+
+
+# ==========================================================
+# Assignment 17
+# Replace One Word With Another
+# ==========================================================
+
+print("\nAssignment 17")
+print("-" * 40)
+
+# ---------- Solution ----------
+
+old_word = input("Old Word : ")
+new_word = input("New Word : ")
+
+with open("hello.txt", "r") as file:
+
+    data = file.read()
+
+data = data.replace(old_word, new_word)
+
+print("\nUpdated Content\n")
+print(data)
+
+
+# ==========================================================
+# Assignment 18
+# Create Uppercase Copy
+# ==========================================================
+
+print("\nAssignment 18")
+print("-" * 40)
+
+# ---------- Solution ----------
+
+with open("hello.txt", "r") as source:
+
+    data = source.read()
+
+with open("uppercase.txt", "w") as destination:
+
+    destination.write(data.upper())
+
+print("Uppercase File Created")
+
+
+# ==========================================================
+# Assignment 19
+# Create Lowercase Copy
+# ==========================================================
+
+print("\nAssignment 19")
+print("-" * 40)
+
+# ---------- Solution ----------
+
+with open("hello.txt", "r") as source:
+
+    data = source.read()
+
+with open("lowercase.txt", "w") as destination:
+
+    destination.write(data.lower())
+
+print("Lowercase File Created")
+
+
+# ==========================================================
+# Assignment 20
+# Complete File Analysis
+# ==========================================================
+
+print("\nAssignment 20")
+print("-" * 40)
+
+# ---------- Solution ----------
+
+with open("hello.txt", "r") as file:
+
+    data = file.read()
+
+print("Characters :", len(data))
+print("Words      :", len(data.split()))
+print("Lines      :", len(data.splitlines()))
+
+vowels = 0
+digits = 0
+uppercase = 0
+lowercase = 0
+spaces = 0
+special = 0
+
+for ch in data:
+
+    if ch.lower() in "aeiou":
+
+        vowels += 1
+
+    if ch.isdigit():
+
+        digits += 1
+
+    if ch.isupper():
+
+        uppercase += 1
+
+    if ch.islower():
+
+        lowercase += 1
+
+    if ch == " ":
+
+        spaces += 1
+
+    if not ch.isalnum() and not ch.isspace():
+
+        special += 1
+
+print("Vowels     :", vowels)
+print("Digits     :", digits)
+print("Uppercase  :", uppercase)
+print("Lowercase  :", lowercase)
+print("Spaces     :", spaces)
+print("Special Ch :", special)
