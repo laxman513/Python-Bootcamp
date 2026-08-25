@@ -4,9 +4,16 @@
 # Python cache
 __pycache__/
 *.py[cod]
+*.pyc
 
-# VS Code settings
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
 .vscode/
+.idea/
 
 # Jupyter
 .ipynb_checkpoints/
