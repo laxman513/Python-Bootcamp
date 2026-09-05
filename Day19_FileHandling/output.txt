@@ -1,0 +1,8 @@
+Python file Handling
+Writing data to a text file.
+This line was added using append mode.
+The original content was preserved.
+This line was added using append mode.
+The original content was preserved.
+This line was added using append mode.
+The original content was preserved.

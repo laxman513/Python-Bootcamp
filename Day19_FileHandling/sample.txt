@@ -1,0 +1,2 @@
+Hello, welcome to Python File Handling.
+This is my first text file program.

@@ -1,0 +1,13 @@
+{
+    "name": "Rahul",
+    "age": 20,
+    "address": {
+        "city": "Hyderabad",
+        "state": "Telangana"
+    },
+    "subjects": [
+        "Python",
+        "Math",
+        "Science"
+    ]
+}

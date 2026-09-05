@@ -1,0 +1,2 @@
+Python Hadling
+Using with open() for writing 
