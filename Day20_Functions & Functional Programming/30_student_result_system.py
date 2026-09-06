@@ -6,13 +6,7 @@ from student_result_functions_29 import (
 )
 
 
-def main():
-
-    student = {
-        "name": "Rahul",
-        "marks": [85, 78, 92]
-    }
-
+def display_student_result(student):
     name = student["name"]
     marks = student["marks"]
 
@@ -26,13 +20,33 @@ def main():
 
     print("Student:", name)
     print("Original Marks:", marks)
-    print()
     print("Updated Marks:", updated_marks)
     print("Passing Marks:", passing_marks)
-    print()
     print("Average:", average)
     print("Result:", result)
     print("Grade:", grade)
+    print("-" * 40)
+
+
+def main():
+
+    students = [
+        {
+            "name": "Rahul",
+            "marks": [85, 78, 92]
+        },
+        {
+            "name": "Priya",
+            "marks": [65, 72, 81]
+        },
+        {
+            "name": "Arjun",
+            "marks": [35, 42, 38]
+        }
+    ]
+
+    for student in students:
+        display_student_result(student)
 
 
 if __name__ == "__main__":
