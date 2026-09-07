@@ -13,3 +13,4 @@ with open("students.csv", "r", encoding="utf-8") as file:
 
     for row in reader:
         print(" | ".join(row))
+        

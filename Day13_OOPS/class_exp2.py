@@ -9,3 +9,4 @@ class Student:
 student = Student("Laxman")
 
 student.greet("Namasthe")
+student.__s
