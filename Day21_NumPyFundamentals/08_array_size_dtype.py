@@ -1,0 +1,7 @@
+import numpy as np
+
+numbers = np.array([10, 20, 30, 40, 50])
+
+print("Array:", numbers)
+print("Number of elements:", numbers.size)
+print("Data type:", numbers.dtype)
